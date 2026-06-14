@@ -73,7 +73,8 @@ export async function importEd25519PrivateKeyFromJwk(
   jwk,
   cryptoImpl = globalThis.crypto,
 ) {
-  const keyData = typeof jwk === "string" ? JSON.parse(jwk) : jwk;
+  const parsed = typeof jwk === "string" ? JSON.parse(jwk) : jwk;
+  const { alg, ...keyData } = parsed;
   return cryptoImpl.subtle.importKey(
     "jwk",
     keyData,
