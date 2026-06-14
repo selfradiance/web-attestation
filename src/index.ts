@@ -51,9 +51,9 @@ const NETWORK_PRESETS = {
 };
 const ACTIVE = NETWORK_PRESETS.MAINNET;
 
-// PLACEHOLDER: replace with the service owner's Base address before deploy.
+// Receive wallet (seller). Base address that payments settle to.
 const PAY_TO = "0x155463b78af48b2db07583c266b18e35bee4eed7";
-// PLACEHOLDER: 1.00 USDC, matching the smallest price used by the gateway.
+// 1.00 USDC in atomic units (6 decimals), matching the gateway's smallest price.
 const PRICE_ATOMIC_USDC = "1000000";
 const PRICE_USDC = "1.00";
 const SCHEME = "exact";
