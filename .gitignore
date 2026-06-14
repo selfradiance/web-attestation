@@ -1,0 +1,18 @@
+# Secrets and environment
+.env
+.env.*
+
+# Private keys and identity files
+*.pem
+*-identity.json
+*.key
+privvy
+
+# Project context (never commit)
+*PROJECT_CONTEXT.md
+_context/
+
+# Node
+node_modules/
+dist/
+.wrangler/
