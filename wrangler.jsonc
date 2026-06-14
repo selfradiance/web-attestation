@@ -1,0 +1,10 @@
+{
+  "name": "web-attestation",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-09-01",
+  "compatibility_flags": ["nodejs_compat"]
+  // Secrets (set via `wrangler secret put`, never committed):
+  //   WEB_ATTESTATION_ED25519_PRIVATE_JWK  Ed25519 private JWK for this attestation service
+  //   CDP_API_KEY_ID                       Coinbase Developer Platform key id
+  //   CDP_API_KEY_SECRET                   Coinbase Developer Platform key secret
+}

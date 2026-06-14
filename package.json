@@ -1,13 +1,32 @@
 {
   "name": "web-attestation",
   "version": "1.0.0",
-  "description": "",
+  "description": "x402-gated witness-only web byte observation attestation Worker.",
   "type": "module",
-  "main": "index.js",
   "scripts": {
-    "test": "node --test"
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "build": "wrangler deploy --dry-run",
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
   },
   "keywords": [],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@coinbase/x402": "2.1.0",
+    "@x402/core": "2.14.0",
+    "@x402/evm": "2.14.0",
+    "@x402/extensions": "2.14.0",
+    "@x402/hono": "2.14.0",
+    "hono": "^4.6.0"
+  },
+  "devDependencies": {
+    "@cloudflare/vitest-pool-workers": "^0.16.15",
+    "@cloudflare/workers-types": "^4.20250610.0",
+    "@types/node": "^25.9.3",
+    "typescript": "^5.5.0",
+    "vitest": "^4.1.8",
+    "wrangler": "^4.0.0"
+  }
 }
