@@ -52,7 +52,7 @@ const NETWORK_PRESETS = {
 const ACTIVE = NETWORK_PRESETS.TESTNET;
 
 // PLACEHOLDER: replace with the service owner's Base address before deploy.
-const PAY_TO = "0x63CED4a191d0a37da01a6f2aF8d9Eb17b13eDe8b";
+const PAY_TO = "0x155463b78af48b2db07583c266b18e35bee4eed7";
 // PLACEHOLDER: 1.00 USDC, matching the smallest price used by the gateway.
 const PRICE_ATOMIC_USDC = "1000000";
 const PRICE_USDC = "1.00";
