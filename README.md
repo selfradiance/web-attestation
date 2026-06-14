@@ -6,6 +6,8 @@ byte-observation attestation. Payment is gated with x402.
 
 Current instance: `https://web-attestation.selfradiance.workers.dev`
 
+Part of the [Self-Radiance Agent Runtime Safety Kit](https://selfradiance.github.io). A dormant, witness-only credibility artifact: it signs observations, not endorsements.
+
 ## What it attests
 
 The signed statement asserts exactly one thing: that this endpoint observed
